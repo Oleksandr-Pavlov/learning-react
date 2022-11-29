@@ -1,10 +1,14 @@
+import { Colorpicker } from "./Colorpicker/Colorpicker";
 import { Counter } from "./Counter/Counter";
+import { Dropdown } from "./Dropdown/Dropdown";
+import colors from '../data/colors.json'
 
 export const App = () => {
   return (
     <>
-      <h1>Стани компонентів</h1>
       <Counter initialValue={5} />
+      <Dropdown />
+      <Colorpicker options={colors} />
     </>
   );
 };
